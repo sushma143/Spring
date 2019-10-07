@@ -12,9 +12,9 @@ public class SpringMain {
 		
 		ApplicationContext ctx=new ClassPathXmlApplicationContext("greetings.xml");
 		Greeting greeting=ctx.getBean("festival",Greeting.class);
-		System.out.println(greeting.greet());
-		Greeting greetings=ctx.getBean("anniversary",Greeting.class);
-		System.out.println(greetings.greet());
+//		System.out.println(greeting.greet());
+		Greeting greetings=ctx.getBean("festival",Greeting.class);
+//		System.out.println(greetings.greet());
 		
 	}
 
