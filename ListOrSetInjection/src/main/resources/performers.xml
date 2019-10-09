@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+	<bean id="guitar" class="com.zensar.spring.instruments.Guitar"></bean>
+	<bean id="flute" class="com.zensar.spring.instruments.Flute"></bean>
+	<bean id="keyboard" class="com.zensar.spring.instruments.Keyboard"></bean>
+	<bean id="aahana" class="com.zensar.spring.performers.Instrumentalist">
+		<property name="instruments" >
+			<list>
+				<ref bean="guitar"/>
+				<ref bean="flute"/>
+				<ref bean="keyboard"/>
+				<ref bean="keyboard"/>
+			</list>
+		</property>
+		<property name="song" value="Dil chahta hai"></property>
+	</bean>
+</beans>
