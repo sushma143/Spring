@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+	
+	<bean id="aahana" class="com.zensar.spring.performers.Instrumentalist">
+		<property name="instrumentSongProps" >
+			<props>
+				<prop key="guitar"> kaise mjhe</prop>
+				<prop key="flute">pal pal</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
